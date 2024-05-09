@@ -1,0 +1,59 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.FootballLeague" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="colorPrimary">@color/primaryColor</item>
+        <item name="statusBarBackground">@color/transparent</item>
+        <item name="android:windowTranslucentStatus">false</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <!-- System UI Configurations-->
+        <item name="android:statusBarColor">@color/primaryColor</item>
+        <item name="android:navigationBarColor">@color/primaryColor</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:windowTranslucentNavigation">false</item>
+
+    </style>
+
+    <style name="Theme.FootballLeague" parent="Base.Theme.FootballLeague" />
+
+    <style name="Theme.MainActivity" parent="Base.Theme.FootballLeague">
+        <item name="android:windowBackground">@drawable/launch_background</item>
+
+        <!-- System UI Configurations-->
+        <item name="android:statusBarColor">@color/primaryColor</item>
+        <item name="android:windowLightStatusBar">false
+        </item> <!-- For making status bar content color dark -->
+        <item name="android:navigationBarColor">@color/primaryColor</item>
+        <item name="android:windowLightNavigationBar" tools:targetApi="o_mr1">false
+        </item>  <!-- For making Navigation bar content color dark -->
+
+    </style>
+
+    <style name="TitleTextStyle">
+        <item name="android:textSize">@dimen/_20ssp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_margin">@dimen/_6sdp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="BoldTextStyle">
+        <item name="android:textSize">@dimen/_14ssp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="NormalTextStyle">
+        <item name="android:textSize">@dimen/_12ssp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_marginStart">@dimen/_4sdp</item>
+    </style>
+
+
+</resources>
